@@ -1,0 +1,78 @@
+/* =====================================================
+   FOOTER – CLEAN / EDITORIAL
+   ===================================================== */
+
+.footer-clean {
+  margin-top: 2rem;
+  padding: 1rem 0 1rem;
+  border-top: 1px solid var(--border);
+  background-color: var(--bg);
+}
+
+/* Main row */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Left */
+.footer-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.footer-meta {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.footer-version {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+/* Right links */
+.footer-right {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer-right a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.footer-right a:hover {
+  color: var(--primary);
+}
+
+/* Bottom row */
+.footer-bottom {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 640px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-right {
+    gap: 1rem;
+  }
+}

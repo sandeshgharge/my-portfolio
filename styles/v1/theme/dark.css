@@ -1,0 +1,28 @@
+[data-theme='dark'] {
+  --bg: #020617;
+  --surface: #020617;
+  --border: #1e293b;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #38bdf8;
+
+  --card-bg: #020617;
+  --card-text: #e5e7eb;
+  --card-border: #1e293b;
+
+  --hero-bg: #020617;
+  --hero-text: #e5e7eb;
+  --hero-muted: #94a3b8;
+  --hero-accent: #38bdf8;
+
+  --tabs-bg: var(--surface);
+  --tabs-border: var(--border);
+
+  
+
+  --tabs-bg: #020617;
+  --tabs-border: #1e293b;
+
+  --tab-hover-bg: rgba(255, 255, 255, 0.06);
+  --tab-active-bg: #020617;
+}

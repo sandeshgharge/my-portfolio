@@ -1,0 +1,135 @@
+/* =====================================================
+   EDUCATION SECTION – CLEAN / EDITORIAL STYLE
+   ===================================================== */
+
+/* Section wrapper */
+.education-clean {
+  background-color: var(--bg);
+  padding: 0rem 0;
+}
+
+/* Education list */
+.education-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Single education row */
+.education-row {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 2.5rem;
+
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+/* Hover interaction (subtle & academic) */
+.education-row:hover {
+  transform: translateX(4px) scale(1.05);
+}
+
+/* =========================
+   LEFT: DURATION (Month–Year)
+   ========================= */
+
+.education-duration {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary); /* same as hero keyword */
+
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.duration-sep {
+  opacity: 0.4;
+  margin: 0.15rem 0;
+}
+
+/* =========================
+   RIGHT: CONTENT
+   ========================= */
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Degree (main academic signal) */
+.education-degree {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Course / specialization */
+.education-course {
+  margin-top: 0.2rem;
+  font-size: 1.05rem;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+/* Institution name (supporting) */
+.education-institution {
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+/* Description / narrative */
+.education-description {
+  margin-top: 0.75rem;
+  max-width: 42rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* =========================
+   DARK MODE (optional refinement)
+   ========================= */
+
+[data-theme='dark'] .education-clean {
+  background-color: var(--bg);
+}
+
+/* =========================
+   REDUCED MOTION SUPPORT
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .education-row {
+    transition: none;
+  }
+
+  .education-row:hover {
+    transform: none;
+  }
+}
+
+/* =========================
+   RESPONSIVE (Mobile)
+   ========================= */
+
+@media (max-width: 640px) {
+  .education-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .education-duration {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .duration-sep {
+    margin: 0;
+  }
+}

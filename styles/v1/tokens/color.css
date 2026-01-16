@@ -1,0 +1,26 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f8fafc;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #2563eb;
+
+  --card-bg: #81afdd;
+  --card-text: #1e293b;
+  --card-border: #1e293b;
+
+  --hero-bg: #ffffff;
+  --hero-text: #0f172a;;
+  --hero-muted: #64748b;
+  --hero-accent: #2563eb;
+
+  --tab-bg: transparent;
+  --tab-text: var(--muted);
+
+  --tab-hover-bg: rgba(0, 0, 0, 0.04);
+  --tab-hover-text: var(--text);
+
+  --tab-active-bg: var(--bg);
+  --tab-active-text: var(--text);
+}

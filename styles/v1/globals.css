@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "./tokens/color.css";
+@import "./components/experience.css";
+@import "./theme/dark.css";
+@import "./components/hero.css";
+@import "./components/tabs.css";
+@import "./components/education.css";
+@import "./components/skills.css";
+@import "./components/meetme.css";
+@import "./components/quoteCarousel.css";
+@import "./components/footer.css";
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border: 1px solid var(--card-border);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+

@@ -1,0 +1,138 @@
+/* =====================================================
+   EXPERIENCE SECTION – CLEAN / EDITORIAL STYLE
+   ===================================================== */
+
+.experience-clean {
+  background-color: var(--bg);
+  padding: 0rem 0;
+}
+
+/* Section title */
+.experience-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* List */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row layout */
+.experience-row {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 2.5rem;
+
+  padding: 2.25rem 0;
+  border-bottom: 1px solid var(--border);
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+/* Hover: subtle motion + scale */
+.experience-row:hover {
+  transform: translateX(4px) scale(1.05);
+}
+
+/* =========================
+   LEFT: DURATION
+   ========================= */
+
+.experience-duration {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.duration-sep {
+  opacity: 0.4;
+  margin: 0.15rem 0;
+}
+
+/* =========================
+   RIGHT: CONTENT
+   ========================= */
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Role (primary signal) */
+.experience-role {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Company (secondary) */
+.experience-company {
+  margin-top: 0.25rem;
+  font-size: 1.2rem;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+/* Summary paragraph */
+.experience-summary {
+  margin-top: 0.75rem;
+  max-width: 46rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Highlights list */
+.experience-highlights {
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.experience-highlights li {
+  margin-bottom: 0.35rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   REDUCED MOTION SUPPORT
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-row {
+    transition: none;
+  }
+
+  .experience-row:hover {
+    transform: none;
+  }
+}
+
+/* =========================
+   RESPONSIVE (Mobile)
+   ========================= */
+
+@media (max-width: 640px) {
+  .experience-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .experience-duration {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .duration-sep {
+    margin: 0;
+  }
+}

@@ -1,0 +1,74 @@
+
+
+.hero-section {
+  background-color: var(--hero-bg);
+  color: var(--hero-text);
+  padding: 4rem 0;
+}
+
+.hero-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--hero-muted);
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-accent {
+  color: var(--hero-accent);
+}
+
+.hero-typing {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  min-height: 2rem; /* prevents layout shift */
+}
+
+.hero-description {
+  max-width: 42rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--hero-muted);
+}
+
+.hero-name {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-name-inline {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  0%, 25%, 75% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1.5s infinite;
+}
