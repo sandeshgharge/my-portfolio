@@ -2,7 +2,6 @@ import { Tabs } from '@/components/v1/state-tabs/Tabs'
 import { TabList } from '@/components/v1/state-tabs/TabList'
 import { TabPanel } from '@/components/v1/state-tabs/TabPanel'
 import { portfolioTabs } from '@/data/tabs'
-import { name } from '@/data/personalDetails'
 
 import About from '@/components/v1/sections/About'
 import Experience from '@/components/v1/sections/Experience'
@@ -12,6 +11,7 @@ import Projects from '@/components/v1/sections/Projects'
 import Hobbies from '@/components/v1/sections/Hobbies'
 import MeetMe from '@/components/v1/sections/MeetMe'
 import Footer from '../elements/Footer'
+import AwardsSection from '../sections/AwardSection'
 
 export default function StateLayout() {
   return (
@@ -26,6 +26,7 @@ export default function StateLayout() {
       {/* Panels */}
       <TabPanel when="about"><About /></TabPanel>
       <TabPanel when="experience"><Experience /></TabPanel>
+      <TabPanel when="award"><AwardsSection /></TabPanel>
       <TabPanel when="education"><Education /></TabPanel>
       <TabPanel when="skills"><Skills /></TabPanel>
       <TabPanel when="projects"><Projects /></TabPanel>

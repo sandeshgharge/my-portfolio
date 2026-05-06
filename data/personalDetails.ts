@@ -169,3 +169,42 @@ export const quotes = [
             author: 'Harold Abelson',
           }
         ]
+
+export const awardsData = [
+{
+    "icon": "medal",
+    "title": "Fresco Play Miles Award",
+    "year": "2020",
+    "description": "Selected as one of the top 20 candidates who completed training courses beyond the assigned role in Machine Learning, Artificial Intelligence, and Data Science.",
+  },
+  {
+    "icon": "star",
+    "title": "On The Spot Award",
+    "year": "2019",
+    "description": "This award is for an employee to go the extra mile to make a high-impact contribution in addition to the regular performance cycle."
+  },
+  {
+    "icon": "badge",
+    "title": "Certificate of Appreciation",
+    "year": "2019",
+    "description": "This was awarded for completing the loading testing of cloud servers, before migration. Observation proved useful in making an impactful decision to manage and assign resources for the servers."
+  },
+  {
+    "icon": "award",
+    "title": "Best Team Award",
+    "year": "2018,2017",
+    "description": "Our team was awarded among all other cross-functional teams for performance and swift deliveries."
+  },
+  {
+    "icon": "star",
+    "title": "Special Initiative Award",
+    "year": "2018",
+    "description": "Participated in multicultural events, collaborated with employees outside the domain and made new connections.",
+  },
+  {
+    "icon": "trophy",
+    "title": "IPL Kudos",
+    "year": "2017",
+    "description": "Awarded for performing during the training period of TCS and mentoring colleagues whenever needed."
+  }
+]

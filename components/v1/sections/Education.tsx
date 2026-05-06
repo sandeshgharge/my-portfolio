@@ -1,5 +1,4 @@
 import { education } from "@/data/personalDetails";
-import Title from "../elements/Title";
 
 export default function Education() {
   return (

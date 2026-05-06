@@ -9,6 +9,7 @@
 @import "./components/meetme.css";
 @import "./components/quoteCarousel.css";
 @import "./components/footer.css";
+@import "./components/awardSection.css";
 
 body {
   background-color: var(--bg);

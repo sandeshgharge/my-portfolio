@@ -1,0 +1,132 @@
+/* AwardsSection.css */
+
+.awards-section {
+  background-color: var(--hero-bg);
+  color: var(--hero-text);
+  padding: 6rem 0;
+}
+
+.awards-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.awards-eyebrow {
+  display: inline-block;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--hero-muted);
+  margin-bottom: 1rem;
+}
+
+.awards-title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.awards-accent {
+  color: var(--hero-accent);
+}
+
+.awards-description {
+  max-width: 42rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--hero-muted);
+  margin-bottom: 4rem;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.award-card {
+  background: var(--card-bg, rgba(255, 255, 255, 0.03));
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.award-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--hero-accent);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.award-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--hero-accent);
+}
+
+.award-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.award-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.award-header span {
+  color: var(--hero-accent);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.award-card p {
+  color: var(--hero-muted);
+  line-height: 1.7;
+  font-size: 0.98rem;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .awards-section {
+    padding: 4rem 0;
+  }
+
+  .awards-description {
+    margin-bottom: 3rem;
+  }
+
+  .award-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Add below styles to AwardsSection.css */
+
+.award-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.25rem;
+  color: var(--hero-accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.award-link:hover {
+  opacity: 0.8;
+}
